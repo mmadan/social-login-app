@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">ursAyU7xsmzdZ1VsSkol9RUGDpgp5b1I</property>
+    <property name="acs-oauth-key-production" type="string">K7Dl1k5plSo0ANjFKore8ZZwqlpBPvy1</property>
+    <property name="acs-api-key-production" type="string">mIJ7mDSE6GOPXrBCa8mseNDFiJ0ABlGp</property>
+    <property name="acs-oauth-secret-development" type="string">stnFZ8UdJ1ZCHrajoIO8WIA24NKCNig7</property>
+    <property name="acs-oauth-key-development" type="string">ibVhBRZlwvMM1jSaTGYdBzYzU9C2DNZI</property>
+    <property name="acs-api-key-development" type="string">PvYqdT2zrM5WnrPSc8FATkhTK3A8CPUQ</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.0.2.GA</sdk-version>
+    <id>com.social-login-app</id>
+    <name>social-login-app</name>
+    <version>1.0</version>
+    <publisher>maneeshmadan</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2012 by maneeshmadan</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>360ab845-07f4-45ff-8470-b39781eb2117</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.0.5">ti.cloud</module>
+    </modules>
+</ti:app>
