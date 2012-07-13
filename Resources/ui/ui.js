@@ -33,7 +33,7 @@ exports.createWindow = function(params)
 
 	var defaults = {
 		color : '#fff',
-		barColor : '#808080',
+		barColor : '#5092bd',
 		backButtonTitleImage:'/images/whitearrow.png',
 		backgroundColor : '#fff',
 		tabBarHidden : false,
@@ -124,8 +124,9 @@ exports.createLabel = function(params) {
 		width:'auto',
 		left:'0dp',
 		height:'auto',
-		color : "#000",
-		font : {fontSize : 16}
+		color : "#5092bd",
+		font : {fontSize : 18,
+			fontWeight : 'bold'}
 	};
 	if(Ti.Platform.osname == "ipad")
 	defaults.font = {fontSize : 28};
