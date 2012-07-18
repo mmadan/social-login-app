@@ -1,4 +1,5 @@
-/*
+/*jslint maxerr:1000 */
+ /*
  * Copyright 2008 Netflix, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -115,6 +116,7 @@ OAuth.setProperties(OAuth, // utility functions
             // http://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.1
             s = s.replace(/\+/g, " ");
         }
+        Titanium.API.debug(s);
         return decodeURIComponent(s);
     }
 ,
@@ -301,6 +303,9 @@ OAuth.setProperties(OAuth, // utility functions
     /** Correct the time using a parameter from the URL from which the last script was loaded. */
     correctTimestampFromSrc: function correctTimestampFromSrc(parameterName) {
         parameterName = parameterName || "oauth_timestamp";
+        if (document === undefined) {
+            return;
+        }
         var scripts = document.getElementsByTagName('script');
         if (scripts == null || !scripts.length) return;
         var src = scripts[scripts.length-1].src;
@@ -546,6 +551,6 @@ OAuth.SignatureMethod.registerMethodClass(["HMAC-SHA1", "HMAC-SHA1-Accessor"],
     ));
 
 try {
-    OAuth.correctTimestampFromSrc();
+   // OAuth.correctTimestampFromSrc();
 } catch(e) {
 }

@@ -14,7 +14,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.0.2.GA</sdk-version>
-    <id>com.social-login-app</id>
+    <id>com.socialLoginApp</id>
     <name>social-login-app</name>
     <version>1.0</version>
     <publisher>maneeshmadan</publisher>
