@@ -21,7 +21,7 @@ exports.createFacebookWindow = function()
     });
         // Add the button.  Note that it doesn't need a click event listener.
      win.add(Ti.Facebook.createLoginButton({
-        top : 50
+        top : '50dp'
     }));
     
     
@@ -30,7 +30,7 @@ exports.createFacebookWindow = function()
     postButton.addEventListener('click',function(){
     	if(Titanium.Facebook.loggedIn==false)
     	{
-    		alert('Login 1st to post this message');
+    		alert('Login first to post this message');
     	}
     	else if(postMessage.value==''){alert('status cant be left blank');}
     	else
