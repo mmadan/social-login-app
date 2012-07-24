@@ -10,7 +10,9 @@ exports.createLinkedinWindow = function() {
 		top : '50dp'
 	});
 	win.add(linkedInButton);
+	
 	var login = false;
+	
 	linkedInButton.addEventListener('click', function(){
 		if(!login)
 		{
